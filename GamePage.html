@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet"type="text/css"href="Gamestyle.css">
+        <script src="game.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    </head>
+    <body id="RealBody">
+      
+            <h1 class="Container">Math Quiz Game</h1>
+            <hr class="FancyBar">
+            <br>
+            <br>
+            <br>
+        <div class="score"onload="setNames()">
+            <div id="player1Name"></div>'s <p> </p> Score:<p id="Player1Score"></p></label>
+            <br>
+            <label><p id="player2Name"></p>'s <p></p>Score:<p id="Player2Score"></p></label>
+        </div>
+        <div class="QuestionInput"id="input">
+            <h4>Player 1 Enter your question</h4>
+            <input id="QuestionP1"placeholder="question number 1"class="input">
+            <br>
+            <input id="QuestionOP"placeholder="Question opertaion"class="input">
+            <br>
+            <input id="Question P3"placeholder="Question number 2"class="input">
+            <br>
+            <button class="Submit"onclick="showQuestion()">Submit</button>
+        </div>    
+        <br>
+        <br>        
+        <div class="QuestionOutput"id="Output">
+            <h4>Player 1 Question:</h4>
+            <label id="question">Question will appear here</label>
+            <input id="Answer"placeholder="Enter your answer here">
+            <button class="submit">Send?</button>
+        </div>
+        
+    
+    </body>
+</html>
